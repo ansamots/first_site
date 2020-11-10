@@ -1,5 +1,8 @@
 package first_site.specialist.dey1;
 
+import org.springframework.stereotype.Component;
+
+@Component("shapeCircle")
 public class Circle implements Shape {
     private int x;
     private int y;

@@ -1,5 +1,8 @@
 package first_site.specialist.dey1;
 
+import org.springframework.stereotype.Component;
+
+@Component("shapePoint")
 public class Point implements Shape {
     public int getX() {
         return x;

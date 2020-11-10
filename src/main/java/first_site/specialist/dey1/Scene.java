@@ -1,7 +1,9 @@
 package first_site.specialist.dey1;
 
+import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 
+@Component
 public class Scene {
     private String color;
 
