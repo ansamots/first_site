@@ -1,12 +1,24 @@
 package first_site.specialist.dey1;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+
 
 @Component("shapeCircle")
 public class Circle implements Shape {
     private int x;
     private int y;
+
+    @Value("#{shapePoint.drawRadius()}")
     private int r;
+    private Coords coords;
+
+    @Autowired
+    public Circle(Coords coords){
+        this.coords = coords;
+    }
 
     public int getX() {
         return x;
@@ -34,6 +46,8 @@ public class Circle implements Shape {
 
     @Override
     public void draw() {
+        x = coords.getX();
+        y = coords.getY();
         System.out.printf("Круг находится на следующих координатах: x: %d и по y: %d\nОкружность r: %d\n", x, y, r);
     }
 }
