@@ -5,11 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class MainController {
+public class OrderController {
 
-    @GetMapping("/")
-    public String home(Model model) {
-        model.addAttribute("title", "Главная страница!");
-        return "home";
+    @GetMapping("/orders")
+    public String orders(Model model){
+        model.addAttribute("title2", "Test message");
+        return "orders";
     }
 }
