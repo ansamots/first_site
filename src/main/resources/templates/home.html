@@ -1,10 +1,21 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title th:text="${title}"/>
+        <title>VP-Group</title>
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+        <link type="text/css" rel="stylesheet" href="/css/home_style.css"/>
     </head>
     <body>
+        <header>
+            <div><!--Блок для отражения названия компании-->
+                <p id="header_left">s</p>
+                <h1 id="header_name">PV-Group</h1>
+                <p id="header_right">s</p>
+            </div>
+            <div>
+                <img src="/jpg/home_title.jpg" width="80%" class="transparent50">
+            </div>
+        </header>
         <p th:text="'Привет, ' + ${title} + '!'" />
         <p>Немного <a href="orders">о нас)</a></p>
     </body>

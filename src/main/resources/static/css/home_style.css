@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* font-family: 'Audiowide', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+body {
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+.transparent50 {
+    filter: alpha(Opacity=80);
+    opacity: 0.8;
+    float: right;
+}
+
+#header_left{
+    length: 35%;
+    text-align: left;
+}
+
+#header_right{
+    width: 35%;
+    text-align: right;
+}
+
+#header_name{
+    text-align: center;
+    color: orangered;
+    font-family: 'Audiowide', cursive;
+    width: 30%;
+}

@@ -3,18 +3,23 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
         <title>Title</title>
-        <link type="text/css" rel="stylesheet" href="css/title_style.css">
+        <link type="text/css" rel="stylesheet" href="../static/css/title_style.css">
     </head>
+
     <body>
+        <header>Шапка сайта.</header>
         <h1>Заказы</h1>
         <p th:text="${title2}"></p>
         <p><a href="/">на главную</a></p>
         <p>Тело</p>
+
+        <footer>
+            <p>Нижний этаж</p>
+            <div>
+                &copy; Дивчик
+                <del>Эту строку мы удалили</del>
+            </div>
+        </footer>
     </body>
-    <flootter>
-        <p>Нижний этаж</p>
-        <div>
-            &copy; Дивчик
-        </div>
-    </flootter>
+
 </html>
