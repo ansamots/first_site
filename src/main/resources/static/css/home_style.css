@@ -5,7 +5,7 @@
 /* font-family: 'Roboto', sans-serif; */
 
 body {
-    font-size: large;
+    font-size: medium;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -19,19 +19,43 @@ h1 {
     float: right;
 }
 
-#header_left{
-    length: 35%;
-    text-align: left;
+
+#fatherdiv{
+    position: relative;
+    height: 120px;
+    background-color: cadetblue;
+}
+
+#header_center{
+    float: left;
+    text-align: center;
+    width: 65%;
+
 }
 
 #header_right{
-    width: 35%;
-    text-align: right;
+    float: left;
+    text-align: center;
+    width: 15%;
+
 }
 
 #header_name{
+    position: relative;
+    float: left;
+    width: 20%;
+
+}
+
+#vp_group{
     text-align: center;
     color: orangered;
     font-family: 'Audiowide', cursive;
-    width: 30%;
+    font-size: 250%;
+    background-color: aliceblue;
+}
+
+#slogan{
+    font-family: 'Audiowide', cursive;
+    background-color: brown;
 }
