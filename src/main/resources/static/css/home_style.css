@@ -19,14 +19,24 @@ h1 {
     float: right;
 }
 
+#number{
+    color: orangered;
+    font-size: 150%;
+}
+
 #header_left{
-    length: 35%;
+    font-size: 70%;
+    width: 34%;
     text-align: left;
+    display: inline-block;
+    /*float: left;*/
 }
 
 #header_right{
-    width: 35%;
+    width: 34%;
     text-align: right;
+    display: inline-block;
+    /*float: left;*/
 }
 
 #header_name{
@@ -34,4 +44,6 @@ h1 {
     color: orangered;
     font-family: 'Audiowide', cursive;
     width: 30%;
+    display: inline-block;
+    /*float: left;*/
 }
